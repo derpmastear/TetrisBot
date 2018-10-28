@@ -1,7 +1,7 @@
 class Field
 {
-   boolean[][] matrix;
-   Piece[] pieces;
+   private static boolean[][] matrix;
+   private static Piece[] pieces;
    public Field()
    {
       matrix = new boolean[20][10]; //[rows][columns]
@@ -13,5 +13,9 @@ class Field
          }
       }
       pieces = new Piece[6]; 
+   }
+   public static Piece getPiece(int place)
+   {
+      return pieces[place];
    }
 }

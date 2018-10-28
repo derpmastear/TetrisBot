@@ -11,8 +11,10 @@ class Runtime
    {
       Field playField = new Field();
       Bot tetrisBot = new Bot(playField);
-      Thread.sleep(5000);
-      for(int a = 0; a < 10; a++)
+      Thread.sleep(2000);
+      tetrisBot.press(KeyEvent.VK_R);
+      Thread.sleep(2000);
+      for(int a = 0; a < 5; a++)
       {
          tetrisBot.press(left);
          tetrisBot.press(space);
